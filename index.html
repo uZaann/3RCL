@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCrew - Portfolio Tim Profesional</title>
+    <meta name="description" content="Portfolio tim kami yang terdiri dari Desainer UI/UX, Front-end Developer, dan Back-end Developer">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="assets/css/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.png" height="40">
+                <span>3Raíces Código Libre</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Tim Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-light ms-lg-3" id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-3 fw-bold mb-4"><span>3RCL</span> Membangun<span class="text-primary">Pengalaman Digital</span> yang Luar Biasa</h1>
+                    <p class="lead mb-4">Tim profesional kami siap mewujudkan visi digital Anda menjadi kenyataan.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#team" class="btn btn-primary btn-lg px-4">Kenali Tim Kami</a>
+                        <a href="#portfolio" class="btn btn-outline-light btn-lg px-4">Lihat Portofolio</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image-container">
+                        <img src="assets/images/team/designer.jpg" alt="Tim Kami" class="img-fluid rounded-4 main-img">
+                        <img src="assets/images/team/frontend.jpg" alt="Tim Kami" class="img-fluid rounded-4 floating-img-1">
+                        <img src="assets/images/team/backend.jpg" alt="Tim Kami" class="img-fluid rounded-4 floating-img-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#team" class="scroll-link">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 py-lg-7">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Tim <span class="text-primary">Kami</span></h2>
+                <p class="lead">Berkenalan dengan anggota tim profesional kami</p>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Designer -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card card h-100 border-0 shadow-sm">
+                        <div class="team-img-container">
+                            <img src="assets/images/team/designer.jpg" class="card-img-top" alt="UI/UX Designer">
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-behance"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mas P Diddy</h5>
+                            <p class="text-primary mb-3">UI/UX Designer</p>
+                            <p class="card-text">Menciptakan desain yang indah dan pengalaman pengguna yang mulus adalah passion saya.</p>
+                            <button class="btn btn-outline-primary btn-sm view-skills" data-member="designer">Lihat Skills</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Front-end Developer -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card card h-100 border-0 shadow-sm">
+                        <div class="team-img-container">
+                            <img src="assets/images/team/frontend.jpg" class="card-img-top" alt="Front-end Developer">
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-codepen"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fauzan Afryan</h5>
+                            <p class="text-primary mb-3">Front-end Developer</p>
+                            <p class="card-text">Mengubah desain menjadi kode yang elegan dan responsif adalah keahlian saya.</p>
+                            <button class="btn btn-outline-primary btn-sm view-skills" data-member="frontend">Lihat Skills</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Back-end Developer -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card card h-100 border-0 shadow-sm">
+                        <div class="team-img-container">
+                            <img src="assets/images/team/backend.jpg" class="card-img-top" alt="Back-end Developer">
+                            <div class="social-links">
+                                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-stack-overflow"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Mas Amba</h5>
+                            <p class="text-primary mb-3">Back-end Developer</p>
+                            <p class="card-text">Membangun logika bisnis yang kuat dan skalabel adalah spesialisasi saya.</p>
+                            <button class="btn btn-outline-primary btn-sm view-skills" data-member="backend">Lihat Skills</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Skills Modal -->
+            <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="skillsModalLabel">Skills</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="designer-skills" class="skills-content">
+                                <h6>UI/UX Designer Skills</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Figma</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Adobe XD</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Photoshop</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">User Research</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div id="frontend-skills" class="skills-content d-none">
+                                <h6>Front-end Developer Skills</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <span class="fw-bold">HTML/CSS</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 98%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">JavaScript</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">React</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Vue.js</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <div id="backend-skills" class="skills-content d-none">
+                                <h6>Back-end Developer Skills</h6>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Node.js</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Python</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">Database</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 92%"></div>
+                                        </div>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="fw-bold">API Development</span>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 96%"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 py-lg-7 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Layanan <span class="text-primary">Kami</span></h2>
+                <p class="lead">Apa yang bisa kami tawarkan untuk Anda</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">Desain antarmuka yang indah dan pengalaman pengguna yang mulus untuk produk digital Anda.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> Wireframing & Prototyping</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> User Research</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Design System</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h5 class="card-title">Front-end Development</h5>
+                            <p class="card-text">Implementasi desain menjadi kode yang responsif, cepat, dan mudah digunakan.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> Responsive Web Design</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Progressive Web Apps</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Performance Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card card h-100 border-0 shadow-sm">
+                        <div class="card-body p-4 text-center">
+                            <div class="service-icon mb-4">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h5 class="card-title">Back-end Development</h5>
+                            <p class="card-text">Solusi back-end yang kuat dan skalabel untuk mendukung aplikasi Anda.</p>
+                            <ul class="list-unstyled text-start">
+                                <li><i class="fas fa-check text-primary me-2"></i> API Development</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Database Design</li>
+                                <li><i class="fas fa-check text-primary me-2"></i> Cloud Integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#contact" class="btn btn-primary btn-lg px-4">Diskusikan Proyek Anda</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 py-lg-7">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Portfolio <span class="text-primary">Kami</span></h2>
+                <p class="lead">Beberapa proyek terbaik yang telah kami kerjakan</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portfolio-card card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-container">
+                            <img src="assets/images/projects/project1.jpg" class="card-img-top" alt="Project 1">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Aplikasi E-Commerce</h5>
+                                    <p class="text-white">Solusi belanja online dengan UX yang luar biasa</p>
+                                    <a href="#" class="btn btn-light btn-sm stretched-link view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="1">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">ShopEasy</h5>
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portfolio-card card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-container">
+                            <img src="assets/images/projects/project2.jpg" class="card-img-top" alt="Project 2">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Platform LMS</h5>
+                                    <p class="text-white">Sistem manajemen pembelajaran modern</p>
+                                    <a href="#" class="btn btn-light btn-sm stretched-link view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="2">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">EduSmart</h5>
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portfolio-card card border-0 shadow-sm overflow-hidden">
+                        <div class="portfolio-img-container">
+                            <img src="assets/images/projects/project3.jpg" class="card-img-top" alt="Project 3">
+                            <div class="portfolio-overlay">
+                                <div class="overlay-content">
+                                    <h5 class="text-white">Aplikasi Kesehatan</h5>
+                                    <p class="text-white">Platform pemantauan kesehatan pribadi</p>
+                                    <a href="#" class="btn btn-light btn-sm stretched-link view-project" data-bs-toggle="modal" data-bs-target="#projectModal" data-project="3">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="card-title mb-0">HealthTrack</h5>
+                                <span class="badge bg-primary">Full Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-outline-primary btn-lg px-4">Lihat Lebih Banyak</a>
+            </div>
+            
+            <!-- Project Modal -->
+            <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="projectModalLabel">Detail Proyek</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div id="project1-details" class="project-details">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/projects/project1.jpg" class="img-fluid rounded mb-4" alt="ShopEasy">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>ShopEasy - Aplikasi E-Commerce</h4>
+                                        <p class="text-muted">Platform belanja online dengan pengalaman pengguna yang luar biasa dan performa tinggi.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Klien:</strong> Retail Corp</li>
+                                            <li class="mb-2"><strong>Tahun:</strong> 2023</li>
+                                            <li class="mb-2"><strong>Teknologi:</strong> React, Node.js, MongoDB</li>
+                                        </ul>
+                                        <h5 class="mt-4">Fitur Utama</h5>
+                                        <ul>
+                                            <li>Pencarian produk canggih dengan filter</li>
+                                            <li>Sistem pembayaran terintegrasi</li>
+                                            <li>Rekomendasi produk berbasis AI</li>
+                                            <li>Antarmuka yang sangat responsif</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="project2-details" class="project-details d-none">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/projects/project2.jpg" class="img-fluid rounded mb-4" alt="EduSmart">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>EduSmart - Platform LMS</h4>
+                                        <p class="text-muted">Sistem manajemen pembelajaran modern untuk institusi pendidikan.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Klien:</strong> EduFuture</li>
+                                            <li class="mb-2"><strong>Tahun:</strong> 2022</li>
+                                            <li class="mb-2"><strong>Teknologi:</strong> Vue.js, Laravel, MySQL</li>
+                                        </ul>
+                                        <h5 class="mt-4">Fitur Utama</h5>
+                                        <ul>
+                                            <li>Manajemen kursus dan materi</li>
+                                            <li>Sistem penilaian otomatis</li>
+                                            <li>Forum diskusi interaktif</li>
+                                            <li>Analitik pembelajaran</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="project3-details" class="project-details d-none">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <img src="assets/images/projects/project3.jpg" class="img-fluid rounded mb-4" alt="HealthTrack">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>HealthTrack - Aplikasi Kesehatan</h4>
+                                        <p class="text-muted">Platform pemantauan kesehatan pribadi dengan integrasi wearable devices.</p>
+                                        <ul class="list-unstyled">
+                                            <li class="mb-2"><strong>Klien:</strong> HealthPlus</li>
+                                            <li class="mb-2"><strong>Tahun:</strong> 2023</li>
+                                            <li class="mb-2"><strong>Teknologi:</strong> Flutter, Firebase, Python</li>
+                                        </ul>
+                                        <h5 class="mt-4">Fitur Utama</h5>
+                                        <ul>
+                                            <li>Pelacakan aktivitas fisik</li>
+                                            <li>Monitor pola tidur</li>
+                                            <li>Analisis nutrisi</li>
+                                            <li>Integrasi dengan dokter</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                            <button type="button" class="btn btn-primary">Kunjungi Situs</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5 py-lg-7 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Apa Kata <span class="text-primary">Klien</span></h2>
+                <p class="lead">Testimoni dari klien yang puas dengan kerja kami</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-12">
+                    <div class="testimonial-slider" data-aos="fade-up">
+                        <div class="testimonial-item">
+                            <div class="testimonial-content card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="mb-4">
+                                        <i class="fas fa-quote-left text-primary fs-1 opacity-25"></i>
+                                    </div>
+                                    <p class="lead mb-4">"Tim DevCrew sangat profesional dalam mengerjakan proyek e-commerce kami. Desain yang mereka buat tidak hanya indah tetapi juga sangat fungsional, dan implementasi teknisnya sempurna."</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="rounded-circle me-3" width="60" alt="Client">
+                                        <div>
+                                            <h6 class="mb-0">Diana Putri</h6>
+                                            <small class="text-muted">CEO Retail Corp</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="mb-4">
+                                        <i class="fas fa-quote-left text-primary fs-1 opacity-25"></i>
+                                    </div>
+                                    <p class="lead mb-4">"Kolaborasi dengan tim ini sangat menyenangkan. Mereka memahami kebutuhan kami dengan baik dan memberikan solusi yang melebihi ekspektasi. Aplikasi LMS yang mereka bangun benar-benar mengubah cara kami mengajar."</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="60" alt="Client">
+                                        <div>
+                                            <h6 class="mb-0">Rudi Hartono</h6>
+                                            <small class="text-muted">Direktur EduFuture</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-item">
+                            <div class="testimonial-content card border-0 shadow-sm">
+                                <div class="card-body p-4">
+                                    <div class="mb-4">
+                                        <i class="fas fa-quote-left text-primary fs-1 opacity-25"></i>
+                                    </div>
+                                    <p class="lead mb-4">"HealthTrack yang dikembangkan oleh DevCrew telah membantu ribuan pengguna kami memantau kesehatan mereka. Antarmukanya intuitif dan sistem back-end-nya sangat stabil."</p>
+                                    <div class="d-flex align-items-center">
+                                        <img src="https://randomuser.me/api/portraits/women/65.jpg" class="rounded-circle me-3" width="60" alt="Client">
+                                        <div>
+                                            <h6 class="mb-0">Lisa Permata</h6>
+                                            <small class="text-muted">CTO HealthPlus</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 py-lg-7">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold">Hubungi <span class="text-primary">Kami</span></h2>
+                <p class="lead">Mari berbicara tentang proyek Anda</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <h4 class="mb-4">Kirim Pesan</h4>
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Nama Anda" required>
+                                            <label for="name">Nama Anda</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Email Anda" required>
+                                            <label for="email">Email Anda</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="subject" placeholder="Subjek" required>
+                                            <label for="subject">Subjek</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Pesan Anda" id="message" style="height: 150px" required></textarea>
+                                            <label for="message">Pesan Anda</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary btn-lg">Kirim Pesan</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body p-4 p-lg-5">
+                            <h4 class="mb-4">Informasi Kontak</h4>
+                            <p class="mb-5">Silakan hubungi kami melalui informasi di bawah ini atau isi formulir kontak untuk diskusi lebih lanjut tentang proyek Anda.</p>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Lokasi</h5>
+                                    <p class="mb-0">Jl. Teknologi No. 123, Jakarta Selatan, Indonesia</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Email</h5>
+                                    <p class="mb-0">info@devcrew.id<br>contact@devcrew.id</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="me-4">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Telepon</h5>
+                                    <p class="mb-0">+62 812 3456 7890<br>+62 821 0987 6543</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-5">
+                                <h5 class="mb-3">Ikuti Kami</h5>
+                                <div class="d-flex gap-3">
+                                    <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#" class="social-btn"><i class="fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a class="navbar-brand mb-3" href="#">
+                        <img src="assets/images/logo.png" height="40">
+                        <span>3RCL</span>
+                    </a>
+                    <p class="mb-4">Tim profesional yang berdedikasi untuk menciptakan solusi digital yang luar biasa untuk bisnis Anda.</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-btn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="mb-4">Tautan Cepat</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-white text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#team" class="text-white text-decoration-none">Tim Kami</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white text-decoration-none">Layanan</a></li>
+                        <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Layanan Kami</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">UI/UX Design</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Front-end Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Back-end Development</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Aplikasi Mobile</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Konsultasi Teknologi</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-4">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Berlangganan newsletter kami untuk mendapatkan update terbaru.</p>
+                    <form class="mb-3">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Email Anda" required>
+                            <button class="btn btn-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                    <p class="small">Kami tidak akan membagikan email Anda kepada siapapun.</p>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 3RCL. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Made with <i class="fas fa-heart text-danger"></i> by 3RCL Team</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="assets/js/aos.js"></script>
+    
+    <!-- Particles JS -->
+    <script src="assets/js/particles.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</body>
+</html>
